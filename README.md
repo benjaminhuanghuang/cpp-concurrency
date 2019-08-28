@@ -4,6 +4,10 @@
 
 ## Creating Threads
 - Using a function pointer
+```
+std::thread thObj(<CALLBACK>);
+```
+
 - Using a functor
 - Using a lambda function
 
