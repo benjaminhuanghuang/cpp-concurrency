@@ -4,9 +4,7 @@ CC = g++ -std=c++11
 
 INCLUDE_PATHS = -I/usr/local/include 
 
-COMPILER_FLAGS = -Wall
-
-LINKER_FLAGS = -lglfw
+COMPILER_FLAGS = 
 
 NAME = main.exe
 
