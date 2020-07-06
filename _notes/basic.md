@@ -1,23 +1,9 @@
+## concurrency 
+  A coding technique that ensures the use of all cores and maximizes a machine’s capabilities.
 
-# 花花 线程与进程
-## Reference
-花花酱 线程与进程 并行计算1 - CS大讲堂 EP1
-https://www.youtube.com/watch?v=prFEyaUEAMM
+![](./_images/cpp-concurrency-evolution.png)
 
-## Thread and Process
-![](./_images/thread-process.png)
+## Concurrency vs. parallelism
+In parallelism, we run multiple copies of the same program simultaneously, but they are executed on **different data**. These tasks are not necessarily in communication with each other, but they are running at the same time in parallel. 
 
-
-## Parallel vs Concurrent
-![](./_images/parallel.png)
-
-
-![](./_images/multi-thread-process.png)
-
-
-## Critical section issue and lock
-![](./_images/critical-section.png)
-原因在于 变量会被读入寄存器再计算
-
-## Communicatons
-![](./_images/communication.png)
+Concurrent programming involves a shared memory location, and the different threads actually "read" the information provided by the previous threads.
