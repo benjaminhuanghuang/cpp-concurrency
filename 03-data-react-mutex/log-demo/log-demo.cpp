@@ -18,20 +18,23 @@ class LogFile
 public:
   LogFile()
   {
-    f.open("log.txt");
   }
   void shared_print(string id, int val)
   {
+    call_once(_flag, [&](){f.open("log.txt");});
+
     lock_guard<mutex> guard(_mutex);
     f << "From " << id << ": " << val << endl;
   }
 
 private:
   mutex _mutex;
+  once_flag _flag;
+
   ofstream f;
 };
 
-void function_1(LogFile & log)
+void function_1(LogFile &log)
 {
   for (int i = 0; i < 10000; i++)
   {
