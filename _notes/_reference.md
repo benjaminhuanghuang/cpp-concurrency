@@ -16,5 +16,8 @@
 - [Modern C++ Concurrency: Get the most out of any machine](https://www.educative.io/courses/modern-cpp-concurrency-in-practice-get-the-most-out-of-any-machine)
 
 
+- [C++11 14 17 20 多线程从原理到线程池实战](https://www.bilibili.com/video/BV1Zf4y1z7wT?t=34)
+
+
 
 
