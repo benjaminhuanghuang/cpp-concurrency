@@ -12,4 +12,6 @@
 
 - blocked : pending(lock, event, semaphore), suspend, delay, pendtime
 
+- exit
+
 
